@@ -1,0 +1,34 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+analyze.md
+
+# Local environments and logs
+.venv/
+*.log
+
+# Generated training and optimization artifacts
+*.npy
+*.npz
+*.obj
+*.pt
+*.pth
+*.ckpt
+stage2_data/
+stage2_runs/
+runs/
+iterative-property-network-32/
+dataset-pareto-property-network-32/
+result/
+tmp/
+pareto_front_outputs/
+pareto_metric_outputs/
+data/
+src/**/__pycache__/
+
+# Keep metadata CSV files in the repository unless they are generated locally.

@@ -1,0 +1,21 @@
+name: ihd
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+
+dependencies:
+  # Use Python 3.10 for broad PyTorch / scikit-image compatibility.
+  - python=3.10
+  - numpy=1.26
+  - pytorch=2.4.*
+  # GPU build for Linux + NVIDIA. Remove this line on CPU-only or macOS installs.
+  - pytorch-cuda=12.1
+  - scikit-image=0.24.*
+  - pip
+
+  # Optional packages for faster or alternative code paths:
+  # - pymcubes
+  # - torch-scatter
+  # - scipy
+  # - spconv

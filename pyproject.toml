@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maple-lattice"
+version = "0.1.0"
+description = "Lattice structure optimization for additive manufacturing"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Yu Xing" },
+  { name = "Yang Liu" },
+  { name = "Lin Lu" },
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+maple-ihd = "maple.core.main_IHD_v3:main"
+maple-build-multiphysics = "maple.data.build_multiphysics_dataset:main"
+maple-build-biobjective = "maple.data.build_weight_sweep_dataset:main"
+maple-build-triobjective = "maple.data.build_triobjective_weight_dataset:main"
+maple-densify-pareto = "maple.pareto.densify_pareto_property_network_32:main"
+maple-run-iterative-pareto = "maple.pareto.run_iterative_property_network_densification:main"
+maple-prepare-stage2 = "maple.training.prepare_stage2_training_data:main"
+maple-train-stage2 = "maple.training.train_stage2_density_generator:main"

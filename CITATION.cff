@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying paper."
+title: "Lattice Structure Optimization for Additive Manufacturing: Manufacturability-Driven Design and Pareto Front Construction"
+type: software
+version: "0.1.0"
+license: MIT
+authors:
+  - family-names: Xing
+    given-names: Yu
+  - family-names: Liu
+    given-names: Yang
+  - family-names: Lu
+    given-names: Lin
+doi: 10.3724/SP.J.1089.2026-00157
+url: "https://www.jcad.cn/article/doi/10.3724/SP.J.1089.2026-00157"
+repository-code: "https://github.com/xing-yuu/MAPLE"
+preferred-citation:
+  type: article
+  title: "面向增材制造的晶格结构优化：制造约束驱动及帕累托前沿构建"
+  authors:
+    - family-names: Xing
+      given-names: Yu
+    - family-names: Liu
+      given-names: Yang
+    - family-names: Lu
+      given-names: Lin
+  year: 2026
+  doi: 10.3724/SP.J.1089.2026-00157
+  url: "https://www.jcad.cn/article/doi/10.3724/SP.J.1089.2026-00157"
